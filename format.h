@@ -147,6 +147,10 @@ inline uint32_t clzll(uint64_t x) {
 # endif
 #endif
 
+#ifdef FMT_USE_RVALUE_REFERENCES
+#undef FMT_USE_RVALUE_REFERENCES
+#endif
+
 #if FMT_USE_RVALUE_REFERENCES
 # include <utility>  // for std::move
 #endif
