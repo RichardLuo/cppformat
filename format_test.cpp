@@ -22,7 +22,7 @@ int main (int argc, char *argv[])
 {
     // std::string s = fmt::format("{0:<4x}", 0x42);
     std::string s = fmt::format("[{:<10}]", "hello");
-    LOGFL("s:%s \n", s.c_str());
+    LOGW("s:%s \n", s.c_str());
 
     uint32_t kk = 10;
 
@@ -31,13 +31,13 @@ int main (int argc, char *argv[])
 
     const char *info0 = "hello-info0";
     s = fmt::format("\t|---- {} <-- {} --> {}\n", 100, info0, 200);
-    LOGFL("s:%s \n", s.c_str());
+    LOGW("s:%s \n", s.c_str());
 
     s = fmt::format("{0:<4} *** [{1:<20}]", 100, "kkk");
-    LOGFL("s:%s \n", s.c_str());
+    LOGW("s:%s \n", s.c_str());
 
     s = fmt::format("{:<4} *** [{:<20}]", 100, "kkk");
-    LOGFL("s:%s \n", s.c_str());
+    LOGW("s:%s \n", s.c_str());
 
     return 0;
 }
